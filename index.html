@@ -1,1 +1,45 @@
 razzyatzu
+DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Keseharian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jadwal Keseharian</h1>
+    <table id="jadwalTable">
+      <thead>
+        <tr>
+          <th>Hari</th>
+          <th>Kegiatan</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Baris jadwal akan muncul di sini -->
+      </tbody>
+    </table>
+    <h2>Tambah Kegiatan</h2>
+    <form id="jadwalForm">
+      <label for="hari">Hari:</label>
+      <select id="hari" required>
+        <option value="">Pilih Hari</option>
+        <option>Senin</option>
+        <option>Selasa</option>
+        <option>Rabu</option>
+        <option>Kamis</option>
+        <option>Jumat</option>
+        <option>Sabtu</option>
+        <option>Minggu</option>
+      </select>
+      <label for="kegiatan">Kegiatan:</label>
+      <input type="text" id="kegiatan" required>
+      <button type="submit">Tambah</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+  </html>
