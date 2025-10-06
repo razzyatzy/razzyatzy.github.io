@@ -1,45 +1,83 @@
-razzyatzu
-DOCTYPE html>
+coding gw wkwkwk 
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jadwal Keseharian</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Profil Sekolah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #2e8b57;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #eee;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Jadwal Keseharian</h1>
-    <table id="jadwalTable">
-      <thead>
-        <tr>
-          <th>Hari</th>
-          <th>Kegiatan</th>
-          <th>Aksi</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Baris jadwal akan muncul di sini -->
-      </tbody>
-    </table>
-    <h2>Tambah Kegiatan</h2>
-    <form id="jadwalForm">
-      <label for="hari">Hari:</label>
-      <select id="hari" required>
-        <option value="">Pilih Hari</option>
-        <option>Senin</option>
-        <option>Selasa</option>
-        <option>Rabu</option>
-        <option>Kamis</option>
-        <option>Jumat</option>
-        <option>Sabtu</option>
-        <option>Minggu</option>
-      </select>
-      <label for="kegiatan">Kegiatan:</label>
-      <input type="text" id="kegiatan" required>
-      <button type="submit">Tambah</button>
-    </form>
-  </div>
-  <script src="script.js"></script>
+    <header>
+        <h1>Sekolah Pintar Nusantara</h1>
+        <p>Membentuk Generasi Cerdas dan Berkarakter</p>
+    </header>
+    <main>
+        <section>
+            <h2>Tentang Sekolah</h2>
+            <p>Sekolah Pintar Nusantara merupakan institusi pendidikan yang berfokus pada pengembangan ilmu pengetahuan, teknologi, dan karakter siswa.</p>
+        </section>
+        <section>
+            <h2>Fasilitas</h2>
+            <ul>
+                <li>Laboratorium Komputer</li>
+                <li>Perpustakaan</li>
+                <li>Lapangan Olahraga</li>
+                <li>Ruang Kelas Ber-AC</li>
+                <li>WiFi Gratis</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ekstrakurikuler</h2>
+            <ul>
+                <li>Pramuka</li>
+                <li>Basket</li>
+                <li>English Club</li>
+                <li>Robotika</li>
+                <li>Seni Musik</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Kontak Kami</h2>
+            <p>Email: info@sekolahpintar.id</p>
+            <p>Telepon: (021) 12345678</p>
+            <p>Alamat: Jl. Pendidikan No. 1, Jakarta</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Sekolah Pintar Nusantara
+    </footer>
 </body>
-  </html>
+</html>
