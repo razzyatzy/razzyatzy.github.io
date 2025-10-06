@@ -3,96 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekolah Menyala: Bagus & Penuh Semangat</title>
+    <title>SMK Islam Malahayati - Unggul, Islami, Berkarakter</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff; /* Warna dasar cerah */
+            background-color: #f4f4f9; /* Latar belakang lembut */
             color: #333;
         }
         header {
-            background-color: #ff4500; /* Merah menyala/Oranye, melambangkan semangat */
+            background-color: #00796b; /* Warna Hijau Tua Khas Islami/Pendidikan */
             color: white;
             padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #004d40; /* Hijau yang lebih gelap untuk navigasi */
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #009688; /* Efek hover yang lebih cerah */
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 85%;
+            margin: 25px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .section-title {
-            color: #1e90ff; /* Biru terang, melambangkan ilmu pengetahuan */
-            border-bottom: 3px solid #ff4500;
+            color: #00796b;
+            border-bottom: 3px solid #ff9800; /* Garis oranye untuk aksen semangat */
             padding-bottom: 10px;
             margin-top: 30px;
         }
-        .feature-list {
-            list-style: none;
-            padding: 0;
+        .program-keahlian {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
-        .feature-list li {
-            background: #e6f7ff; /* Latar belakang item yang lembut */
-            margin-bottom: 10px;
-            padding: 15px;
-            border-left: 5px solid #ff4500;
-            border-radius: 4px;
-            font-weight: bold;
+        .keahlian-card {
+            background-color: #e0f2f1; /* Latar belakang card yang lembut */
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            text-align: center;
         }
-        .guru {
-            background-color: #fdfd96; /* Kuning cerah, melambangkan ide */
+        .nilai-islami {
+            background-color: #fffde7; /* Kuning pucat untuk nilai Islami */
             padding: 15px;
-            margin-top: 15px;
-            border-radius: 4px;
+            border-left: 5px solid #ff9800;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🌟 Sekolah MENYALA 💡</h1>
-        <p>Visi: Tempat Bertumbuhnya Inovasi, Kualitas, dan Semangat Tinggi</p>
+        <h1>SMK Islam Malahayati ✨</h1>
+        <p>Mencetak Generasi Cerdas, Terampil, dan Berakhlak Mulia</p>
     </header>
 
-    <div class="container">
-        
-        <h2 class="section-title">Ciri-Ciri Sekolah BAGUS (Kualitas Inti)</h2>
-        <ul class="feature-list">
-            <li>✅ Kurikulum **Adaptif** dan Relevan dengan Masa Depan</li>
-            <li>✅ Lingkungan Belajar **Aman**, Nyaman, dan Penuh Dukungan</li>
-            <li>✅ Fasilitas **Modern** untuk Mendukung Kreativitas</li>
-            <li>✅ Fokus pada **Pengembangan Karakter** dan *Soft Skills*</li>
-        </ul>
-        
-        <h2 class="section-title">Elemen Sekolah MENYALA (Inovasi & Energi)</h2>
-        <ul class="feature-list">
-            <li>🔥 Program **Kepemimpinan** Siswa (Student Council yang Aktif)</li>
-            <li>🔥 **Pusat Inkubasi Ide** dan Wirausaha Muda</li>
-            <li>🔥 Ekstrakurikuler **Digital** dan **Seni** yang Mutakhir</li>
-            <li>🔥 Budaya **Refleksi** dan Perbaikan Berkelanjutan</li>
-        </ul>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#ppdb">PPDB</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
 
-        <h2 class="section-title">Pendidik yang Menginspirasi</h2>
-        <div class="guru">
-            <p><strong>Ibu Ani - Ahli Inovasi Digital</strong></p>
-            <p><em>"Guru adalah sumber cahaya, bukan hanya penyampai materi."</em></p>
+    <div class="container" id="beranda">
+        <h2 class="section-title">Selamat Datang di Gerbang Masa Depan!</h2>
+        <p>SMK Islam Malahayati adalah institusi pendidikan kejuruan yang memadukan keunggulan **kompetensi teknis** dengan penanaman **nilai-nilai Islam** yang kuat.</p>
+        
+        <div class="nilai-islami">
+            <strong>🕌 Nilai Inti Kami:</strong>
+            <p>Setiap lulusan dibekali dengan keahlian profesional dan **Karakter Islami (Iman & Taqwa)** sebagai modal utama dalam menghadapi dunia kerja.</p>
         </div>
-        <div class="guru">
-            <p><strong>Pak Budi - Coach *Life Skills*</strong></p>
-            <p><em>"Sekolah adalah persiapan hidup, bukan hanya persiapan ujian."</em></p>
-        </div>
+    </div>
 
+    <div class="container" id="keahlian">
+        <h2 class="section-title">Program Keahlian Unggulan 🛠️</h2>
+        <p>Kami fokus pada keahlian yang relevan dengan industri 4.0:</p>
+
+        <div class="program-keahlian">
+            <div class="keahlian-card">
+                <h3>Teknik Komputer & Jaringan (TKJ)</h3>
+                <p>Spesialisasi di bidang *Cloud Computing* dan *Cyber Security*.</p>
+            </div>
+            
+            <div class="keahlian-card">
+                <h3>Akuntansi Keuangan Lembaga (AKL)</h3>
+                <p>Menguasai akuntansi digital dan perpajakan syariah.</p>
+            </div>
+            
+            <div class="keahlian-card">
+                <h3>Desain Komunikasi Visual (DKV)</h3>
+                <p>Menciptakan karya desain dengan sentuhan etika dan moral Islami.</p>
+            </div>
+        </div>
     </div>
     
-</body>
-</html>
+    <div class="container" id="ppdb">
+        <h2 class="section-title">Pendaftaran Siswa Baru (PPDB)</h2>
+        <p>Bergabunglah bersama kami! Pendaftaran dibuka setiap tahun ajaran baru. Klik tombol di bawah ini untuk informasi lebih lanjut.</p>
+        <p style="text-align: center;">
+            <a href="#" style="display: inline-block; padding: 10px 25px; background-color: #ff9800; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">DAFTAR SEKARANG</a>
+        </p>
+    </div>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0; margin-top: 30px;">
+        <p>&#169; 20
