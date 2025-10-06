@@ -1,28 +1,105 @@
-<div class="container" id="ekskul">
-        <h2 class="section-title">Program Ekstrakurikuler Pilihan</h2>
-        <p style="text-align: center; font-style: italic;">Mengembangkan *soft skills* dan minat bakat dengan pondasi Islami.</p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Islam Malahayati ✨ Unggul & Inovatif</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap' rel='stylesheet'>
+    
+    <style>
+        /* Base Styling */
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; padding: 0; 
+            background-color: #fcfdfe; /* Hampir putih, sangat terang */
+            color: #333; 
+            line-height: 1.6; 
+        }
+        .container { 
+            width: 90%; max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 30px; 
+            background-color: white; 
+            border-radius: 15px; /* Lebih halus */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Shadow yang bersih */
+        }
+        
+        /* Header & Navigasi - Menjaga Identitas Hijau */
+        header { 
+            background-color: #00796b; /* Hijau Terang Khas */
+            color: white; 
+            padding: 30px 0; 
+            text-align: center; 
+        }
+        header h1 { margin: 0; font-size: 3em; font-weight: 800; }
+        nav { background-color: #009688; padding: 12px 0; }
+        nav a { 
+            color: white; text-decoration: none; 
+            padding: 10px 25px; margin: 0 10px; 
+            border-radius: 30px; /* Tombol Pil */
+            transition: all 0.3s ease; 
+            font-weight: 600; 
+        }
+        nav a:hover { 
+            background-color: #ff5722; /* Oranye Menyala */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Judul Bagian */
+        .section-title { 
+            color: #00796b; 
+            border-bottom: 4px solid #ff5722; /* Garis aksen yang terang */
+            padding-bottom: 15px; margin-top: 50px; 
+            font-size: 2.2em; text-align: center; 
+            font-weight: 800; 
+        }
 
-        <div class="ekskul-list" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; justify-content: center;">
-            
-            <div class="ekskul-item" style="flex: 1 1 45%; padding: 15px; border-radius: 8px; background-color: #fafafa; border-left: 5px solid #00bcd4;">
-                <h4 style="color: #00bcd4; margin-top: 0;">💻 Malahayati Tech Creator</h4>
-                <p>Klub pemrograman, robotika sederhana, dan desain grafis berbasis project.</p>
-            </div>
+        /* Visi Misi Card */
+        .vm-grid { display: flex; gap: 30px; margin-top: 30px; text-align: center; }
+        .vm-card { 
+            flex: 1; padding: 30px; border-radius: 12px; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+            border: 1px solid #ddd;
+        }
+        .vm-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+        .visi-card { background-color: #e0f7fa; } /* Biru Muda Terang */
+        .misi-card { background-color: #fcf3cf; } /* Kuning Pucat Terang */
+        .vm-card h3 { color: #00796b; font-size: 1.6em; }
+        .misi-card ol { text-align: left; padding-left: 25px; }
 
-            <div class="ekskul-item" style="flex: 1 1 45%; padding: 15px; border-radius: 8px; background-color: #fafafa; border-left: 5px solid #ff9800;">
-                <h4 style="color: #ff9800; margin-top: 0;">🕌 Tahfidz dan Kajian Islam Remaja</h4>
-                <p>Fokus pada hafalan Al-Qur'an dan pemahaman ajaran Islam kontemporer.</p>
-            </div>
+        /* Program/Ekskul Card Styling */
+        .program-card { 
+            padding: 20px; border-radius: 10px; 
+            background-color: #ffffff; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+            border-bottom: 5px solid; 
+            transition: all 0.3s;
+        }
+        .program-card:hover { background-color: #f7fbfd; transform: translateY(-3px); }
+        .program-card h4 { color: #ff5722; margin-top: 0; font-size: 1.2em; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 25px; }
+        
+        /* Call to Action Button */
+        .cta-button {
+            display: inline-block; padding: 15px 40px; 
+            background-color: #ff5722; color: white; 
+            text-decoration: none; border-radius: 50px; 
+            font-weight: bold; font-size: 1.2em; 
+            margin-top: 30px; transition: background-color 0.3s;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+        }
+        .cta-button:hover { background-color: #f4511e; }
 
-            <div class="ekskul-item" style="flex: 1 1 45%; padding: 15px; border-radius: 8px; background-color: #fafafa; border-left: 5px solid #4caf50;">
-                <h4 style="color: #4caf50; margin-top: 0;">🎤 Debat & Public Speaking Club</h4>
-                <p>Melatih kepercayaan diri, kemampuan presentasi, dan berpikir kritis.</p>
-            </div>
+        /* Footer */
+        footer { background-color: #333; color: white; text-align: center; padding: 25px 0; margin-top: 50px; }
 
-            <div class="ekskul-item" style="flex: 1 1 45%; padding: 15px; border-radius: 8px; background-color: #fafafa; border-left: 5px solid #f44336;">
-                <h4 style="color: #f44336; margin-top: 0;">⚽ Futsal & Jurnalistik Sekolah</h4>
-                <p>Mengembangkan kerjasama tim dan keterampilan menulis berita/laporan.</p>
-            </div>
-
-        </div>
-</div>
+        /* FAQ (Accordion) */
+        .faq-question { 
+            width: 100%; text-align: left; padding: 18px; 
+            background-color: #e0f7fa; border: none; cursor: pointer; 
+            font-weight: 700; font-size: 1.1em; color: #00796b; 
+            border-radius: 8px; transition: background-color 0.3s; 
+            margin-top: 10px;
+        }
+        .faq-question:hover { background-color: #b
